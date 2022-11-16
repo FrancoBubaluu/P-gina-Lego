@@ -1,0 +1,158 @@
+:root{
+    --color-nav: rgb(136, 134, 134);
+    --color-fondo-amarillo: rgb(254, 229, 0); 
+    --color-fondo-blanco: white;
+    --color-cuadros-azul: rgb(0 80 200);
+    --color-texto: rgb(122 122 122);
+    --color-Super-Hereo: black;
+    --color-diseña: rgb(74 73 73);
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contenedor-textos-1{
+    width: 1fr;
+    height: 100%;
+    background-color: var(--color-fondo-blanco);
+}
+
+
+.contenedor-nav{
+    height: 176px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.imagen-logo{
+    width: 60px;
+    height: 60px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color-nav);
+}
+
+nav a:hover{
+    padding-top: 5px;
+    border-top: 2px solid var(--color-nav);
+}
+
+.contenedor-main{
+    height: 578px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-titulos{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 141px 0 50px 125px;
+}
+
+.diseña{
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.titulo{
+    font-size: 50px;
+    font-weight: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.texto-largo{
+    padding: 0;
+    font-size: 22px;
+    margin: 0 0 0 80px;
+}
+
+.dibujos{
+    height: 234px;
+    position: relative;
+}
+
+.contenedor-dibujos{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-fondo-amarillo);
+    border-top-right-radius: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
+}
+
+.contenedor-dibujos div{
+    width: 110px;
+    height: 140px;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    background-color: var(--color-cuadros-azul);
+    position: relative;
+}
+
+.dibujos img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 60px;
+}
+
+.caja-1 img{
+    right: -10px;
+}
+
+.caja-2 img{
+    right: 0;
+}
+
+.caja-3 img{
+    right: -25px;
+}
+
+.contenedor-textos-2{
+    background-color: var(--color-fondo-amarillo);
+}
+
+.contenedor-img-p{
+    width: 450px;
+    height: 100%;
+    background-color: var(--color-fondo-blanco);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.img-super{
+    width: 494px;
+    height: 555px;
+    position: absolute;
+    top: 202.5px;
+    right: -250px;
+}
+
+.superman{
+    padding: 0;
+    color: var(--color-Super-Hereo);
+    margin: 0 0 0 150px;
+    transform: rotate(-100grad);
+    font-size: 30px;
+}
